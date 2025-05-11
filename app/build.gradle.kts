@@ -32,12 +32,22 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.okhttp)
+    implementation(libs.json)
+    implementation(libs.camera.core)
+    implementation(libs.camera.camera2)
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
+    implementation(libs.mlkit.vision.common)
+    implementation(libs.guava)
+    implementation(libs.pose.detection.common)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation ("com.google.mlkit:pose-detection-accurate:18.0.0-beta3")
 }
